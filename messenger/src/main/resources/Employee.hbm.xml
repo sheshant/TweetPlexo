@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+   <class name="org.sheshant.messenger.model.Employee" table="EMPLOYEE">
+      <id name="id" type="int" column="ID">
+            <generator class="assigned"/>
+        </id>
+        <property name="firstName">
+            <column name="first_name"/>
+        </property>
+        <property name="lastName">
+            <column name="last_name"/>
+        </property>
+        <property name="salary" type="int">
+            <column name="salary"/>
+        </property>
+   </class>
+</hibernate-mapping>

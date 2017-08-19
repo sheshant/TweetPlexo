@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="org.sheshant.messenger.model.MessageComment" table="MESSAGE_COMMENT">
+      <meta attribute="class-description">
+         This class contains the message comments details. 
+      </meta>
+      <id name="id" type="long" column="ID"/>
+      <property name="messageid" column="MESSAGE_ID" type="long"/>
+      <property name="commentid" column="COMMENT_ID" type="long"/>
+   </class>
+</hibernate-mapping>
